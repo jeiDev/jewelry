@@ -1,0 +1,48 @@
+.container{
+    min-height: 80px;
+    max-height: 80px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.boxLeft{
+    flex: 1 1 auto;
+}
+
+.boxLeft,
+.boxRight{
+    display: flex;
+    align-items: center;
+}
+
+.navUl{
+    display: flex;
+    align-items: center;
+}
+
+.navItem{
+    margin-right: 40px;
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+.navItem:last-child{
+    margin-right: 0;
+}
+
+.navItemFill{
+    background-color: var(--bg-secondary-color);
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.navItemFill a{
+    color: white;
+}

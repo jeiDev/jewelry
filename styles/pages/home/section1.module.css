@@ -1,4 +1,5 @@
 .container{
+    padding-top: 80px;
     height: 595px;
 }
 
@@ -40,7 +41,6 @@
 
 @media only screen and (max-width: 980px) {
     .container{
-        padding-top: 80px;
         height: auto;
     }
 

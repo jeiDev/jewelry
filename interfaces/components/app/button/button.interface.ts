@@ -5,4 +5,5 @@ export interface ButtonPropsI{
     children: ReactNode
     color?: ColorType
     background?: ColorType
+    link: string
 }

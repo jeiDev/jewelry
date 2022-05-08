@@ -13,11 +13,12 @@ const HomeSection1 = () => {
                         <Button 
                             background="var(--bg-secondary-color)" 
                             color="white"
+                            link="#"
                         >
                             Contact
                         </Button>
 
-                        <Button>
+                        <Button link="#">
                             <div className={style.buttonGallery}>
                                 <span>Gallery</span>
                                 <RowRight />

@@ -1,15 +1,20 @@
 .container{
-    min-height: 80px;
-    max-height: 80px;
     width: 100vw;
-    overflow: hidden;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
+}
+
+.container,
+.row{
+    min-height: 80px;
+    max-height: 80px;
 }
 
 .row{
     display: flex;
     flex: 1 1 auto;
+    height: 100%;
 }
 
 .boxLeft{
@@ -20,6 +25,7 @@
 .boxRight{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .navUl{
@@ -45,4 +51,71 @@
 
 .navItemFill a{
     color: white;
+}
+
+
+/**********************************************
+***** MOBILE
+***********************************************/
+.buttonMenuToggle{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    fill: white;
+    display: none;
+}
+
+.buttonMenuToggle svg{
+    position: relative;
+    top: 1px;
+}
+
+.boxNavMobile{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: var(--bg-secondary-color);
+    width: 0vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.boxNavMobile ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxNavMobile ul li{
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 18px 25px;
+    box-sizing: border-box;
+}
+
+.boxNavMobile ul li a{
+    color: white;
+}
+
+.boxFixedNavMobile{
+    width: 50vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .navDesktop {
+      display: none;
+    }
+
+    .buttonMenuToggle{
+        display: flex;
+    }
 }

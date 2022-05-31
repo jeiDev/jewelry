@@ -117,5 +117,14 @@
 
     .buttonMenuToggle{
         display: flex;
+        position: fixed;
+        top: 18px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .boxNavMobile ul{
+        padding-top: 15px;
+    }
+}
+
